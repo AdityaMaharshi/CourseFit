@@ -1,0 +1,13 @@
+<div class="form-container">
+  <h3 style="font-family:'Bree Serif', serif; text-align:center; font-size:25px;">Welcome to TAMUC CourseFit</h3>
+
+  <img src="assets/images/Lion-Head.png" style="size:20%; -webkit-filter: drop-shadow(5px 5px 5px #999);
+  filter: drop-shadow(5px 5px 5px #999);" id="lock">
+
+    <span class="error" *ngIf="error">{{ error }}</span>
+
+  <button (click)="loginGoogle()" id="google">Login With Google</button>
+  <button (click)="loginEmail()" routerLink="/login" id="email">Email</button>
+
+  <a routerLink="/signup" routerLinkActive="active" class="alc">No account? <strong>Create one here</strong></a>
+</div>
